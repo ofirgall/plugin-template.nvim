@@ -7,6 +7,9 @@ if test -f ./lemmy-help; then
 fi
 
 DOC_FILE=doc/{PLUGIN_NAME}.txt
-# TODO: choose multiple files
 
-$LEMMY_HELP --prefix-func --prefix-alias --prefix-class --prefix-type lua/{PLUGIN_NAME}/init.lua > $DOC_FILE
+INPUT_FILES=(
+    lua/{PLUGIN_NAME}/init.lua
+)
+
+$LEMMY_HELP --prefix-func --prefix-alias --prefix-class --prefix-type ${INPUT_FILES[*]} > $DOC_FILE
