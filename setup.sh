@@ -14,4 +14,9 @@ find ! -path "./.git/*"  ! -name 'setup.sh' -type f -exec sed -i '' -e "s/{PLUGI
 # Replace directories
 mv lua/PLUGIN_NAME lua/$PLUGIN_NAME
 
+# Replace README files
+rm -f README.md
+mv PLUGIN_README.md README.md
+
+# Destroy setup.sh
 # rm ./setup.sh

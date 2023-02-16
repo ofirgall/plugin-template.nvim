@@ -1,11 +1,6 @@
-# {PLUGIN_NAME}.nvim
-{PLUGIN_DESCRIPTION}
+# Nvim Plugin Template
 
-## Installation
-```lua
-use '{GITHUB_USERNAME}/{PLUGIN_NAME}.nvim'
-```
-
-## Usage
-```lua
-```
+## Features
+* Basic `setup` function
+* Basic README
+* Generating vimdoc from [emmylua](https://github.com/numToStr/lemmy-help/blob/master/emmylua.md) using [lemmy-help](https://github.com/numToStr/lemmy-help) with github action.
