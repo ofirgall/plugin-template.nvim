@@ -21,5 +21,8 @@ mv PLUGIN_README.md README.md
 # Generate doc
 ./.github/scripts/gen_doc.sh
 
+# Activate workflows
+mv ./.github/workflows_disabled/ ./.github/workflows
+
 # Destroy setup.sh
-# rm ./setup.sh
+rm ./setup.sh
