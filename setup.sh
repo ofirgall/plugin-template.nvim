@@ -19,7 +19,7 @@ rm -f README.md
 mv PLUGIN_README.md README.md
 
 # Generate doc
-./github/scripts/gen_doc.sh
+./.github/scripts/gen_doc.sh
 
 # Destroy setup.sh
 # rm ./setup.sh
