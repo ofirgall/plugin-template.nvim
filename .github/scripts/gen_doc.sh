@@ -1,6 +1,6 @@
 LEMMY_HELP=lemmy-help
 
-if [ test -f ./lemmy-help ]; then
+if test -f ./lemmy-help; then
     LEMMY_HELP=./lemmy-help
 fi
 
