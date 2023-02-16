@@ -8,6 +8,10 @@ PLUGIN_NAME=$1
 PLUGIN_DESCRIPTION=$2
 GITHUB_USER=$3
 
+# Search & Replace {} placeholders
 find ! -path "./.git/*"  ! -name 'setup.sh' -type f -exec sed -i '' -e "s/{PLUGIN_NAME}/$PLUGIN_NAME/g; s/{PLUGIN_DESCRIPTION}/$PLUGIN_DESCRIPTION/g; s/{GITHUB_USERNAME}/$GITHUB_USER/g" {} \;
+
+# Replace directories
+mv lua/PLUGIN_NAME lua/$PLUGIN_NAME
 
 # rm ./setup.sh
