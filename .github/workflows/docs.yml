@@ -2,9 +2,6 @@ name: lemmy-help
 
 on: [push]
 
-env:
-  PLUGIN_NAME: {PLUGIN_NAME}
-
 jobs:
   docs:
     runs-on: ubuntu-latest
