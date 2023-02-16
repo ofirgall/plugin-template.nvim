@@ -8,6 +8,6 @@ PLUGIN_NAME=$1
 PLUGIN_DESCRIPTION=$2
 GITHUB_USER=$3
 
-find . -type f -print0 | xargs -0 sed -i '' -e "s/commit-prefix/$PLUGIN_NAME/g" -e "s/test description/$PLUGIN_DESCRIPTION/g" -e "s/ofirgall/$GITHUB_USER/g"
+find ! -path "./.git/*"  ! -name 'setup.sh' -type f -exec sed -i '' -e "s/{PLUGIN_NAME}/$PLUGIN_NAME/g; s/{PLUGIN_DESCRIPTION}/$PLUGIN_DESCRIPTION/g; s/{GITHUB_USERNAME}/$GITHUB_USER/g" {} \;
 
 # rm ./setup.sh
