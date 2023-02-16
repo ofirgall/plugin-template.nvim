@@ -20,6 +20,7 @@ mv PLUGIN_README.md README.md
 
 # Generate doc
 ./.github/scripts/gen_doc.sh
+./.github/scripts/update_readme.sh
 
 # Activate workflows
 mv ./.github/workflows_disabled/ ./.github/workflows
