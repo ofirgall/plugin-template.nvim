@@ -9,4 +9,4 @@ fi
 DOC_FILE=doc/{PLUGIN_NAME}.txt
 # TODO: choose multiple files
 
-$LEMMY_HELP --prefix-func --prefix-alias --prefix-class --prefix-type lua/commit-prefix/init.lua > $DOC_FILE
+$LEMMY_HELP --prefix-func --prefix-alias --prefix-class --prefix-type lua/{PLUGIN_NAME}/init.lua > $DOC_FILE
